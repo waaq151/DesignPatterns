@@ -52,10 +52,7 @@ class Adapter:
 
 
 def main():
-    objects = []
-    computer = Computer("Dell")
-    objects.append(Adapter(computer, dict(execute=computer.execute))) 
-
+    objects = [Computer("Dell")]
     synth = Synthesizer("moog")
     objects.append(Adapter(synth, dict(execute=synth.play)))
 
